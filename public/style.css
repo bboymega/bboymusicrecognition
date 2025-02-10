@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+	@font-face 
+	{
+  		font-family: graf;
+  		src: url(./fonts/Mostwasted.ttf);
+	}
+
+	@font-face 
+	{
+  		font-family: Copperplate;
+  		src: url(./fonts/OPTICopperplate-Light.otf);
+	}	
+
+
+    body 
+	{
+		background-image: url("./background.png");
+  		/* Full height */
+  		height: 100%; 
+  		/* Center and scale the image nicely */
+  		background-position: center;
+		position: absolute;
+   		margin: -100px 0 0 -210px;
+   		top: 12%;
+    	left: 50%;
+    	width: 300px;
+    	padding: 50px;
+    	clear:both;
+    	display:inline-block;
+    	text-align:center;
+    }
+	.box
+	{
+		position: absolute;
+		background-image: url("./box.png");
+		background-size: cover;
+    	height: auto;
+   		margin: -100px 0 0 -210px;
+   		top: 13.5%;
+    	left: 50%;
+    	background-color: #190f13;
+    	width: 320px;
+    	border: 10px solid #190f13;
+    	padding: 50px;
+    	clear:both;
+    	display:inline-block;
+    	text-align:center;
+	}
+		
+    input[type=submit] 
+	{
+      	background-color: #555555;
+      	border: 1px solid #ccc;
+     	color: white;
+        padding: 10px 20px;
+     	text-decoration: none;
+    	margin: 4px -4px;
+    	cursor: pointer;
+    }
+	.main
+	{
+		color: #4d2600; 
+		font-family:Copperplate;
+	}
+	.custom-file-upload 
+	{
+    	background-color: #555555;
+    	color: white;
+    	border: 1px solid #ccc;
+    	display: inline-block;
+    	padding: 5px 10px;
+		margin: 4px 1.5px;
+    	cursor: pointer;
+    }
+	.funcbtn
+	{
+		font-family: Copperplate;
+		color:whitesmoke;
+		padding: 0;
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+	
+	.recordbtn
+	{
+    	background-color: red;
+    	color: white;
+    	border: 1px solid #ccc;
+    	display: inline-block;
+    	padding: 5px 10px;
+		margin: 4px 1.5px;
+    	cursor: pointer;
+    }
+	.hiddendiv {
+  		height: 0px;
+		display: none;
+  		overflow: hidden;
+  		transition: height 0.5s;
+	}
+	.playerContainer
+	{
+	    height: 0px;
+		display: none;
+  		overflow: hidden;
+  		transition: height 0.5s;
+	}
+	.stopbtn
+	{
+    	width: 320px;
+    	height:100%;
+		border: 0px;
+		top: -26%;
+    	visibility: hidden;
+  		background-size: cover;
+		font-family:Copperplate;
+    	position:absolute;
+    	z-index:9999;
+		cursor: pointer;
+		background:url("./recording.gif") no-repeat center center rgba(0,0,0,0.25)
+	}
+	.loading
+	{
+    	width: 320px;
+    	height:120%;
+		border: 0px;
+		top: -24%;
+    	visibility: hidden;
+  		background-size: cover;
+		font-family:Copperplate;
+    	position:absolute;
+    	z-index:9999;
+    	background:url("./loading.gif") no-repeat center center rgba(0,0,0,0.25)
+	}
+		
+    input[type="file"] 
+	{
+        display: none;
+    }

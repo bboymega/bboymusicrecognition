@@ -1,0 +1,6 @@
+{
+    "host":"127.0.0.1",
+    "user":"example_query_storage_db",
+    "password": "example_query_storage_db",
+    "database": "example_query_storage_db"
+}

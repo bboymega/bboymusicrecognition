@@ -1,0 +1,10 @@
+{
+     "database":{
+         "host":"127.0.0.1",
+         "user":"example_music_fingerprint_db",
+         "password": "example_music_fingerprint_db",
+         "database": "example_music_fingerprint_db"
+     },
+     "database_type" : "mysql",
+     "fingerprint_limit" : -1
+}
