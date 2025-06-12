@@ -1,1 +1,31 @@
+RewriteEngine On
+
+#RewriteRule ^$ /en/ [L,R=301]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#Results query
+#RewriteRule ^/?result/(.*?)/?$ /en/result/$1 [L,R=301] 
+RewriteRule ^/?result/(.*?)/?$ ./result.php?status=200&id=$1 [L]
+
+#Identify error
+#RewriteRule ^/?error/identifyerror /en/error/identifyerror [L,R=301]
+RewriteRule ^/?error/identifyerror ./result.php?status=501&error=identifyerror [L]
+
+#Empty file list
+#RewriteRule ^/?error/emptyfilelist /en/error/emptyfilelist [L,R=301]
+RewriteRule ^/?error/emptyfilelist ./result.php?status=400&error=nofilechosen [L]
+
+#File type error
+#RewriteRule ^/?error/filetypeerror /en/error/filetypeerror [L,R=301]
+RewriteRule ^/?error/filetypeerror ./result.php?status=400&error=filetypeerror [L]
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
 Options -Indexes
+
