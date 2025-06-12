@@ -19,20 +19,22 @@ function load_progress()
 	}
 function ident_err()
 {
-	document.getElementById("main").innerHTML='<p style="color: whitesmoke; font-family:Copperplate; font-size: 135%; margin:-10px auto"><b><i class="fas fa-exclamation-triangle"></i> ERROR</b></br></br>Recognition failed. Please try again later.</br></br><a href="./"><label for="return" class="custom-file-upload" style="color:whitesmoke; font-family:Copperplate">Back</label></a>';
+	document.getElementById("main").innerHTML='<p style="color: whitesmoke; font-family:Copperplate; font-size: 135%; margin:-10px auto"><b><i class="fas fa-exclamation-triangle"></i> ERROR</b></br></br>Recognition failed. Please try again later.</br></br><a href="../../"><label for="return" class="custom-file-upload" style="color:whitesmoke; font-family:Copperplate">Back</label></a>';
 }
 function upload_err()
 {
-	document.getElementById("main").innerHTML='<p style="color: whitesmoke; font-family:Copperplate; font-size: 135%; margin:-10px auto"><b><i class="fas fa-exclamation-triangle"></i> ERROR</b></br></br>There is an error uploading the file. Please try again later.</br></br><a href="./"><label for="return" class="custom-file-upload" style="color:whitesmoke; font-family:Copperplate">Back</label></a>';
+	document.getElementById("main").innerHTML='<p style="color: whitesmoke; font-family:Copperplate; font-size: 135%; margin:-10px auto"><b><i class="fas fa-exclamation-triangle"></i> ERROR</b></br></br>There is an error uploading the file. Please try again later.</br></br><a href="../../"><label for="return" class="custom-file-upload" style="color:whitesmoke; font-family:Copperplate">Back</label></a>';
 }
 
 function ident_load()
 {
+	document.title = "Recognizing...";
 	document.getElementById("load").innerHTML='</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br><h1>Recognizing...</h1>';
 	console.log('Recognizing...');
 }
 function upload_progress()
 {
+	document.title = "Uploading...";
 	document.getElementById("load").innerHTML='</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br><h1>Uploading...</h1>';
 }
 
