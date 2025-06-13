@@ -8,6 +8,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 #Results query
 #RewriteRule ^/?result/(.*?)/?$ /en/result/$1 [L,R=301] 
+RewriteRule ^result/?$ /result.php [L]
 RewriteRule ^/?result/(.*?)/?$ ./result.php?status=200&id=$1 [L]
 
 #Identify error
